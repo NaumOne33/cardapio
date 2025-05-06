@@ -6,19 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
             { id: 2, nome: "Hambúrguer Artesanal", descricao: "Pão brioche, carne 180g, queijo cheddar", preco: 32.50, imagem: "https://img.freepik.com/fotos-gratis/vista-frontal-delicioso-hamburguer-de-carne-com-queijo-e-salada-de-fundo-escuro-refeicao-fast-food-carne-grelhada-lanche_140725-89543.jpg" },
             { id: 3, nome: "Salada Caesar", descricao: "Alface, croutons, parmesão e molho caesar", preco: 28.75, imagem: "https://img.freepik.com/fotos-gratis/salada-caesar-com-frango-e-croutons_2829-19268.jpg" },
             { id: 4, nome: "Lasanha à Bolonhesa", descricao: "Massa fresca, molho bolonhesa e queijo", preco: 39.90, imagem: "https://img.freepik.com/fotos-gratis/lasanha-tradicional-no-prato_2829-18880.jpg" },
-            { id: 4, nome: "Prato Feito", descricao: "arroz, feijão, legumes, 2 carnes, salada alface tomate", preco: 20,00}
+            { id: 5, nome: "Prato Feito", descricao: "arroz, feijão, legumes, 2 carnes, salada alface tomate", preco: 20,00}
         ],
         bebidas: [
-            { id: 5, nome: "Refrigerante Lata", descricao: "Coca-Cola, Guaraná, Fanta ou Sprite", preco: 6.50, imagem: "https://img.freepik.com/fotos-gratis/lata-de-refrigerante_144627-16501.jpg" },
-            { id: 6, nome: "Suco Natural", descricao: "Laranja, abacaxi ou maracujá", preco: 8.90, imagem: "https://img.freepik.com/fotos-gratis/copo-de-suco-de-laranja-fresco-isolado-no-fundo-branco_114579-25819.jpg" },
-            { id: 7, nome: "Água Mineral", descricao: "Com ou sem gás", preco: 4.50, imagem: "https://img.freepik.com/fotos-gratis/garrafa-de-agua-isolada_1303-1003.jpg" },
-            { id: 8, nome: "Cerveja Artesanal", descricao: "Chopp 300ml", preco: 12.90, imagem: "https://img.freepik.com/fotos-gratis/copo-de-cerveja-de-vidro-cheio-de-cerveja_140725-1261.jpg" }
+            { id: 6, nome: "Refrigerante Lata", descricao: "Coca-Cola, Guaraná, Fanta ou Sprite", preco: 6.50, imagem: "https://img.freepik.com/fotos-gratis/lata-de-refrigerante_144627-16501.jpg" },
+            { id: 7, nome: "Suco Natural", descricao: "Laranja, abacaxi ou maracujá", preco: 8.90, imagem: "https://img.freepik.com/fotos-gratis/copo-de-suco-de-laranja-fresco-isolado-no-fundo-branco_114579-25819.jpg" },
+            { id: 8, nome: "Água Mineral", descricao: "Com ou sem gás", preco: 4.50, imagem: "https://img.freepik.com/fotos-gratis/garrafa-de-agua-isolada_1303-1003.jpg" },
+            { id: 9, nome: "Cerveja Artesanal", descricao: "Chopp 300ml", preco: 12.90, imagem: "https://img.freepik.com/fotos-gratis/copo-de-cerveja-de-vidro-cheio-de-cerveja_140725-1261.jpg" }
         ],
         sobremesas: [
-            { id: 9, nome: "Brownie com Sorvete", descricao: "Brownie quente com sorvete de creme", preco: 18.90, imagem: "https://img.freepik.com/fotos-gratis/delicioso-brownie-de-chocolate-com-sorvete_23-2148917404.jpg" },
-            { id: 10, nome: "Mousse de Chocolate", descricao: "Mousse cremosa com calda de chocolate", preco: 14.50, imagem: "https://img.freepik.com/fotos-gratis/close-up-de-mousse-de-chocolate-com-frutas-vermelhas_181624-35844.jpg" },
-            { id: 11, nome: "Cheesecake", descricao: "Torta de queijo com calda de frutas vermelhas", preco: 16.90, imagem: "https://img.freepik.com/fotos-gratis/fatia-de-cheesecake-com-morangos_144627-27267.jpg" },
-            { id: 12, nome: "Sorvete", descricao: "3 bolas - sabores diversos", preco: 12.90, imagem: "https://img.freepik.com/fotos-gratis/sorvete-colorido-em-uma-tigela_144627-30794.jpg" }
+            { id: 10, nome: "Brownie com Sorvete", descricao: "Brownie quente com sorvete de creme", preco: 18.90, imagem: "https://img.freepik.com/fotos-gratis/delicioso-brownie-de-chocolate-com-sorvete_23-2148917404.jpg" },
+            { id: 11, nome: "Mousse de Chocolate", descricao: "Mousse cremosa com calda de chocolate", preco: 14.50, imagem: "https://img.freepik.com/fotos-gratis/close-up-de-mousse-de-chocolate-com-frutas-vermelhas_181624-35844.jpg" },
+            { id: 12, nome: "Cheesecake", descricao: "Torta de queijo com calda de frutas vermelhas", preco: 16.90, imagem: "https://img.freepik.com/fotos-gratis/fatia-de-cheesecake-com-morangos_144627-27267.jpg" },
+            { id: 13, nome: "Sorvete", descricao: "3 bolas - sabores diversos", preco: 12.90, imagem: "https://img.freepik.com/fotos-gratis/sorvete-colorido-em-uma-tigela_144627-30794.jpg" }
         ]
     };
 
