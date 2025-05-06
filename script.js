@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { id: 1, nome: "Pizza Margherita", descricao: "Molho de tomate, mussarela e manjericão", preco: 45.90, imagem: "https://img.freepik.com/fotos-gratis/pizza-margherita-classica_141793-177.jpg" },
             { id: 2, nome: "Hambúrguer Artesanal", descricao: "Pão brioche, carne 180g, queijo cheddar", preco: 32.50, imagem: "https://img.freepik.com/fotos-gratis/vista-frontal-delicioso-hamburguer-de-carne-com-queijo-e-salada-de-fundo-escuro-refeicao-fast-food-carne-grelhada-lanche_140725-89543.jpg" },
             { id: 3, nome: "Salada Caesar", descricao: "Alface, croutons, parmesão e molho caesar", preco: 28.75, imagem: "https://img.freepik.com/fotos-gratis/salada-caesar-com-frango-e-croutons_2829-19268.jpg" },
-            { id: 4, nome: "Lasanha à Bolonhesa", descricao: "Massa fresca, molho bolonhesa e queijo", preco: 39.90, imagem: "https://img.freepik.com/fotos-gratis/lasanha-tradicional-no-prato_2829-18880.jpg" }
+            { id: 4, nome: "Lasanha à Bolonhesa", descricao: "Massa fresca, molho bolonhesa e queijo", preco: 39.90, imagem: "https://img.freepik.com/fotos-gratis/lasanha-tradicional-no-prato_2829-18880.jpg" },
+            { id: 4, nome: "Prato Feito", descricao: "arroz, feijão, legumes, 2 carnes, salada alface tomate", preco: 20,00}
         ],
         bebidas: [
             { id: 5, nome: "Refrigerante Lata", descricao: "Coca-Cola, Guaraná, Fanta ou Sprite", preco: 6.50, imagem: "https://img.freepik.com/fotos-gratis/lata-de-refrigerante_144627-16501.jpg" },
