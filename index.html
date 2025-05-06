@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital - Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cardápio Digital</h1>
+            <div class="mesa-info">
+                <label for="mesa">Número da Mesa:</label>
+                <input type="number" id="mesa" min="1" value="1">
+            </div>
+        </header>
+
+        <main>
+            <section class="cardapio">
+                <div class="categorias">
+                    <button class="categoria-btn active" data-categoria="comidas">Comidas</button>
+                    <button class="categoria-btn" data-categoria="bebidas">Bebidas</button>
+                    <button class="categoria-btn" data-categoria="sobremesas">Sobremesas</button>
+                </div>
+
+                <div class="itens-cardapio" id="comidas">
+                    <h2>Comidas</h2>
+                    <div class="itens-grid">
+                        <!-- Itens serão adicionados dinamicamente pelo JavaScript -->
+                    </div>
+                </div>
+
+                <div class="itens-cardapio" id="bebidas" style="display:none;">
+                    <h2>Bebidas</h2>
+                    <div class="itens-grid">
+                        <!-- Itens serão adicionados dinamicamente pelo JavaScript -->
+                    </div>
+                </div>
+
+                <div class="itens-cardapio" id="sobremesas" style="display:none;">
+                    <h2>Sobremesas</h2>
+                    <div class="itens-grid">
+                        <!-- Itens serão adicionados dinamicamente pelo JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="pedido">
+                <h2>Seu Pedido</h2>
+                <div class="pedido-itens" id="pedido-itens">
+                    <p class="vazio">Nenhum item adicionado</p>
+                </div>
+                <div class="pedido-total">
+                    <span>Total: R$</span>
+                    <span id="pedido-total">0.00</span>
+                </div>
+                <div class="pedido-acoes">
+                    <button id="limpar-pedido">Limpar Pedido</button>
+                    <button id="enviar-cozinha">Enviar para Cozinha</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pedido Enviado!</h2>
+            <p id="modal-message"></p>
+            <button id="imprimir-pedido">Imprimir Comanda</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

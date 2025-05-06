@@ -1,0 +1,314 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.mesa-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mesa-info label {
+    font-weight: bold;
+}
+
+.mesa-info input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60px;
+    text-align: center;
+}
+
+/* Categorias */
+.categorias {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categoria-btn {
+    padding: 10px 20px;
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.categoria-btn.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.categoria-btn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Itens do Cardápio */
+.itens-cardapio {
+    margin-bottom: 30px;
+}
+
+.itens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item-cardapio {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.item-cardapio:hover {
+    transform: translateY(-5px);
+}
+
+.item-imagem {
+    height: 150px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.item-nome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-descricao {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item-preco {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.item-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-botoes button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.adicionar {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.adicionar:hover {
+    background-color: #27ae60;
+}
+
+.remover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.remover:hover {
+    background-color: #c0392b;
+}
+
+/* Seção de Pedido */
+.pedido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.pedido h2 {
+    margin-bottom: 15px;
+}
+
+.pedido-itens {
+    min-height: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.pedido-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.pedido-item-nome {
+    font-weight: bold;
+}
+
+.pedido-item-quantidade {
+    color: #666;
+}
+
+.pedido-item-preco {
+    font-weight: bold;
+}
+
+.pedido-total {
+    text-align: right;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.pedido-total span:last-child {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.pedido-acoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido-acoes button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#limpar-pedido {
+    background-color: #f39c12;
+    color: white;
+}
+
+#limpar-pedido:hover {
+    background-color: #d35400;
+}
+
+#enviar-cozinha {
+    background-color: #3498db;
+    color: white;
+}
+
+#enviar-cozinha:hover {
+    background-color: #2980b9;
+}
+
+.vazio {
+    color: #999;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#imprimir-pedido {
+    padding: 12px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#imprimir-pedido:hover {
+    background-color: #27ae60;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .itens-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pedido-acoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .pedido-acoes button {
+        width: 100%;
+    }
+}
